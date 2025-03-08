@@ -6,7 +6,7 @@ const WorkerList = () => {
 
   useEffect(() => {
     const fetchWorkers = async () => {
-      const res = await axios.get('http://localhost:5000/api/workers');
+      const res = await axios.get('/api/workers');
       setWorkers(res.data);
     };
     fetchWorkers();
@@ -22,7 +22,7 @@ const WorkerList = () => {
             className="bg-white rounded-xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 hover:shadow-3xl"
           >
             <img
-              src={`http://localhost:5000/uploads/${worker.image}`}
+              src={`/uploads/${worker.image}`}
               alt={worker.name}
               className="w-full h-56 object-cover"
             />
