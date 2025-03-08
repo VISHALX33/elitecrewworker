@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa'; // Import Font Awesome icons
 
+
+// ?
 const Footer = () => {
   return (
     <footer className="bg-amber-400 text-white py-12">
