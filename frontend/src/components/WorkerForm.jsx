@@ -60,7 +60,7 @@ const WorkerForm = () => {
     }
 
     try {
-      const response = await axios.post('/api/workers', data, {
+      const response = await axios.post('https://elitecrewworker.onrender.com/api/workers', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -74,7 +74,8 @@ const WorkerForm = () => {
   };
 
   return (<>
-    <Services/>
+     <Services/>
+    
     <div className="min-h-screen flex bg-gradient-to-r from-blue-50 to-purple-50">
       {/* Left Side: Form */}
       
@@ -208,9 +209,13 @@ const WorkerForm = () => {
       </div>
 
       {/* Right Side: Preview or Image */}
+      
       <div className="w-1/2 p-8 flex items-center justify-center bg-amber-500">
+      
         <div className="text-center text-white">
+          
           <h2 className="text-4xl font-extrabold mb-4">Welcome to Elite Crew</h2>
+          
           <p className="text-lg">Fill out the form to join our team of talented professionals.</p>
           {formData.image && (
             <div className="mt-8">

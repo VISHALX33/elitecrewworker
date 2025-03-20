@@ -6,7 +6,7 @@ const WorkerList = () => {
 
   useEffect(() => {
     const fetchWorkers = async () => {
-      const res = await axios.get('/api/workers');
+      const res = await axios.get('https://elitecrewworker.onrender.com/api/workers');
       setWorkers(res.data);
     };
     fetchWorkers();
@@ -15,14 +15,14 @@ const WorkerList = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-50 to-purple-50 p-8">
       <h1 className="text-4xl font-extrabold text-center text-gray-900 mb-8">Worker List</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {workers.map((worker) => (
           <div
             key={worker._id}
             className="bg-white rounded-xl shadow-2xl overflow-hidden transform transition-all hover:scale-105 hover:shadow-3xl"
           >
             <img
-              src={`/uploads/${worker.image}`}
+              src={`https://elitecrewworker.onrender.com/uploads/${worker.image}`}
               alt={worker.name}
               className="w-full h-56 object-cover"
             />

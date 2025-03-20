@@ -54,8 +54,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/signup-login" onClick={handleGetStarted} className='bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-600 hover:via-pink-600 hover:to-red-600 transition-all duration-300"' >
-          Get Started
+            <Link to="/WorkerForm" onClick={handleGetStarted} className='bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-600 hover:via-pink-600 hover:to-red-600 transition-all duration-300"' >
+          Apply
           </Link>
         </li>
         </ul>
@@ -86,26 +86,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden mt-4">
           <ul className="flex flex-col space-y-2">
-            <li>
-              <Link to="/#services" className="text-white hover:text-gray-200 block px-4 py-2">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/#team" className="text-white hover:text-gray-200 block px-4 py-2">
-                Team
-              </Link>
-            </li>
-            <li>
-              <Link to="/#testimonials" className="text-white hover:text-gray-200 block px-4 py-2">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link to="/#faq" className="text-white hover:text-gray-200 block px-4 py-2">
-                FAQ
-              </Link>
-            </li>
+            
             <li>
               <Link to="/about" className="text-white hover:text-gray-200 block px-4 py-2">
                 About Us
