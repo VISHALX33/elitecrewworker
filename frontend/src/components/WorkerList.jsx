@@ -6,7 +6,7 @@ const WorkerList = () => {
 
   useEffect(() => {
     const fetchWorkers = async () => {
-      const res = await axios.get('https://elitecrewworker.onrender.com/api/workers');
+      const res = await axios.get('https://eliteworkers.netlify.app/api/workers');
       setWorkers(res.data);
     };
     fetchWorkers();

@@ -61,7 +61,7 @@ const WorkerForm = () => {
     }
 
     try {
-      const response = await axios.post('https://elitecrewworker.onrender.com/api/workers', data, {
+      const response = await axios.post('https://eliteworkers.netlify.app/api/workers', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
