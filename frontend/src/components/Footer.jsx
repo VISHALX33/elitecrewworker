@@ -1,21 +1,14 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa'; // Import Font Awesome icons
 
-
-// ?
 const Footer = () => {
   return (
     <footer className="bg-amber-400 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="text-center md:text-left">
+          <div className="text-center sm:text-left">
             <p className='text-6xl'>EliteCrew</p>
-            {/* <img
-              src="https://via.placeholder.com/150" // Replace with your logo URL
-              alt="Logo"
-              className="w-24 h-24 mx-auto md:mx-0 mb-4"
-            /> */}
             <br />
             <br />
             <p className="text-sm">
@@ -24,7 +17,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="text-center md:text-left">
+          <div className="text-center sm:text-left">
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -43,7 +36,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="text-center md:text-left">
+          <div className="text-center sm:text-left">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li>
@@ -56,9 +49,9 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="text-center md:text-left">
+          <div className="text-center sm:text-left">
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-4 justify-center md:justify-start">
+            <div className="flex space-x-4 justify-center sm:justify-start">
               <a
                 href="https://github.com"
                 target="_blank"
